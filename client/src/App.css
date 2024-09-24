@@ -1,0 +1,204 @@
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.Joinroom_container{
+  height: 100vh;
+  border-style: solid;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.Joinroom_inside{
+  border: solid;
+  background-color:rgb(3, 25, 56);
+  height: 42vh;
+  border-radius: 10px;
+  padding:10px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+}
+
+.inputfield_joinroom{
+  width:98%;
+  gap: 6px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.joinroomtext{
+  height: 35px;
+  background-color: rgb(76, 76, 76);
+  border: none;
+  outline: none;
+  color: aliceblue;
+  font-size:17px;
+  text-align: center;
+  border-radius: 9px;
+}
+.Joinroom_inside_inside{
+  /* border: solid red; */
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.btn_joinroom{
+  height: 40px;
+  width: 30%;
+  border-radius: 4px;
+  margin: 10px;
+}
+.img_logo{
+  height:100px;
+  padding: 20px;
+}
+.text_all{
+  color: rgb(165, 165, 165);
+  text-align: center;
+  align-items: center;
+}
+
+.generate_id{
+  color: rgb(207, 201, 201);
+}
+.create_room_link{
+  color: green;
+}
+
+
+
+/*******************EDITOR_PAGE***********************/
+.inside_editor_container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.left_side_editorpage{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.right_side_editorpage{
+  background-color:rgb(3, 25, 56);
+}
+
+.left_inside_Editor{
+  border-style: solid;
+  /* border-color: white; */
+  height: 99%;
+  margin: auto;
+  width: 30vh;
+}
+
+.Avtar_container{
+  /* background-color: aliceblue; */
+  border-style: solid;
+  padding: 5px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.userName{
+  font-size:20px;
+  font-weight: 500;
+  margin: 0 5px;
+  color: aliceblue;
+}
+
+.Color{
+  background-color: aqua;
+}
+
+.Copyid_container{
+  /* border-style: solid; */
+  /* border-color: red; */
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside_copyconatinerr{
+  /* border-style: solid; */
+  /* border-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.copyid_btn{
+  height: 5vh;
+  width: 200px;
+  border-radius: 5px;
+}
+#copyid{
+  background-color: aliceblue;
+}
+#leaveroom{
+  background-color: rgb(91, 237, 58);
+}
+.copyid_btn:hover{
+  color: rgb(255, 13, 13);
+}
+
+/* .Editor_textarea{
+  height: 100vh;
+  width: 100vw;
+} */
+
+.navbar_main{
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+}
+.navbar_inside{
+  border-style: solid;
+  border-color: rgb(255, 127, 127);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Header_navbar{
+  color: white;
+}
+/* .grid_info{ */
+  /* display: grid; */
+  /* display: flex;
+  flex-direction:row;
+  justify-content: space-between; */
+  /* grid-template-row: auto auto; */
+  /* grid-template-rows: auto auto; */
+  /* grid-template-columns:3fr 1fr; */
+/* } */
+
+.grid_info{
+  display: grid;
+  grid-template-columns: 3fr auto;
+  height: 93%;
+}
+
+
+.output_main{
+  height:300px;
+  background-color: yellow;
+}
+
+.a{
+  background-color: red;
+}
+.b{
+  background-color: rgb(62, 3, 3);
+}
+.c{
+  background-color: rgb(218, 206, 206);
+}
