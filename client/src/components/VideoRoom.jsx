@@ -3,12 +3,8 @@ import AgoraRTC, { createClient } from 'agora-rtc-sdk-ng';
 import { VideoPlayer } from "./VideoPlayer";
 // import env from '../'
 const APP_ID ='28da9540904b465083bbd6f0250b033c';
-const TOKEN ="007eJxTYJja5Su76O8VPlf/iqUcX1irnYoU32bzbq4sUg09e4Ez2EuBwcgiJdHS1MTA0sAkycTM1MDCOCkpxSzNwMjUIMnA2Dj5auDbtIZARgYpVykWRgYIBPGZGRILChgYAHoIHA8=";
+const TOKEN ="007eJxTYND6vnJD8YZ9Wz7M2Zb6+Ebqx6/c58ry3Xf+4zlYKi0hJTVfgcHIIiXR0tTEwNLAJMnEzNTAwjgpKcUszcDI1CDJwNg4WezVp7SGQEaGW6xurIwMEAjiMzMkFhQwMAAA4jAgjw==";
 const CHANNEL ="app";
-// const APP_ID =process.env.APP_ID;
-// const TOKEN =process.env.TOKEN;
-// const CHANNEL =process.env.CHANNEL;
-
 AgoraRTC.setLogLevel(4);
 
 let agoraCommandQueue = Promise.resolve();

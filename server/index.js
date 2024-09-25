@@ -6,12 +6,6 @@ const ACTIONS = require("./Actions");
 const server = http.createServer(app);
 const io = new Server(server);
 const userSocketMap = {};
-//new added
-// const {ExpressPeerServer} = require("peer");
-// const peerServer = ExpressPeerServer(server,{
-//     debug: true
-// });
-// app.use("/peerjs",peerServer);
 
 const getAllConnectedClients = (roomid) => {
   return Array.from(io.sockets.adapter.rooms.get(roomid) || []).map(
@@ -60,14 +54,10 @@ io.on("connection", (socket) => {
     socket.on('join-room', (roomid) => {
       socket.join(roomid)
       socket.to(roomid).broadcast.emit('user-connected',roomid)
-  
-      // socket.on('disconnect', () => {
-      //   socket.to(roomId).broadcast.emit('user-disconnected', userId)
-      // })
     })
     delete userSocketMap[socket.id];
     socket.leave();
   });
 });
-const PORT =5000;
-server.listen(PORT, () => console.log(`Server is runnint on port ${PORT}`));
+const port =process.env.PORT ||5000;
+server.listen(port, () => console.log(`Server is runnint on port ${port}`));

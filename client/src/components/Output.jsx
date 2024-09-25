@@ -8,6 +8,7 @@ const Output = ({codeRef, javascript}) => {
   const [isError, setIsError] = useState(false);
 
   const runCode = async () => {
+    
     const sourceCode = codeRef.current;
     console.log(codeRef.current);
     if (!sourceCode) return;
@@ -26,17 +27,15 @@ const Output = ({codeRef, javascript}) => {
   };
 
   return (
-    <fra className="output_main">
-      <text mb={2} fontSize="lg">
-        Output
-      </text>
+    <>
+    <div  className="output_main">
       <button
         variant="outline"
         colorScheme="green"
         mb={4}
         isLoading={isLoading}
         onClick={runCode}
-      >
+      className="btn_run">
         Run Code
       </button>
       <div
@@ -51,7 +50,8 @@ const Output = ({codeRef, javascript}) => {
           ? output.map((line, i) => <p key={i}>{line}</p>)
           : 'Click "Run Code" to see the output here'}
       </div>
-    </fra>
+    </div>
+    </>
   );
 };
 export default Output;

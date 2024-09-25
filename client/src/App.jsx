@@ -11,11 +11,11 @@ function App() {
   <div >
     <Toaster position='top-center'></Toaster>
   </div>
-      {/* <Routes>
+      <Routes>
       <Route path="/room/:roomid" element={<Editorpage/>}></Route>
       <Route path="/" element={<Joinroom/>}></Route>
-      </Routes>  */}
-      <ResizableDemo></ResizableDemo>
+      </Routes> 
+      {/* <ResizableDemo></ResizableDemo> */}
       {/* <Navbar></Navbar> */}
       {/* <VideoRoom/> */}
     </>

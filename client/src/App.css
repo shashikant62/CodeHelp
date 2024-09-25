@@ -89,7 +89,7 @@
   flex-direction: column;
 }
 .right_side_editorpage{
-  background-color:rgb(3, 25, 56);
+  background-color:rgb(98, 102, 107);
 }
 
 .left_inside_Editor{
@@ -190,9 +190,16 @@
 
 .output_main{
   height:300px;
-  background-color: yellow;
+  width:20vw;
+  background-color: rgb(236, 236, 209);
+  overflow: scroll;
+  /* margin: auto; */
 }
-
+.btn_run{
+  /* margin: auto; */
+  height: 20px;
+  /* color: aqua; */
+}
 .a{
   background-color: red;
 }

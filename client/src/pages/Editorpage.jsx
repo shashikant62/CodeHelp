@@ -96,6 +96,7 @@ const EditorPage = () => {
             <div className='left_side_editorpage'>
                 <div className='left_inside_Editor'>
                     <Username Clienname={clients}/>
+                     <VideoRoom></VideoRoom>
                 </div>
                 <CopyId/>
             </div>
@@ -108,12 +109,11 @@ const EditorPage = () => {
                 <Editor socketref={socketRef} roomid={roomid} onCodeChange={(code) => {
                     codeRef.current = code;
                 }}/>
-                {/* <VideoRoom></VideoRoom> */}
-                {/* <Output codeRef={codeRef}></Output> */}
-                {/* <div className="sidebar">
-                <div className="resizer"></div>
                 <Output codeRef={codeRef}></Output>
-                </div> */}
+                </div>
+                {/* <Output codeRef={codeRef}></Output> */}
+                {/* <VideoRoom></VideoRoom> */}
+                <div >
                 </div>
             </div>
         </div>

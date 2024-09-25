@@ -26,7 +26,7 @@ const Editor=({roomid,socketref,onCodeChange})=>{
         }
       );
       editorRef.current = editor;
-      editor.setSize(null, "90%");
+      editor.setSize(null, "107.5%");
       editorRef.current.on("change", (instance, changes) => {
         // console.log("changes", instance ,  changes );
         const { origin } = changes;
