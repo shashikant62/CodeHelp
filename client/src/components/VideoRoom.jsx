@@ -3,7 +3,7 @@ import AgoraRTC, { createClient } from 'agora-rtc-sdk-ng';
 import { VideoPlayer } from "./VideoPlayer";
 // import env from '../'
 const APP_ID ='28da9540904b465083bbd6f0250b033c';
-const TOKEN ="007eJxTYNCbVtZ+cvUrky9rbnznP95VzHM/wDm86a/n1d+Wnr9CudsUGIwsUhItTU0MLA1MkkzMTA0sjJOSUszSDIxMDZIMjI2Tj3NbpTcEMjK8a5/FxMgAgSA+M0NiQQEDAwCmkiA1";
+const TOKEN ="007eJxTYAj/2zOj+fi6/zP8vq9O3BNdxz1RNN8r1bRIbUbk1kVeCZEKDEYWKYmWpiYGlgYmSSZmpgYWxklJKWZpBkamBkkGxsbJ3Yes0hsCGRk+K3UyMTJAIIjPzJBYUMDAAAA+4h6v";
 const CHANNEL ="app";
 AgoraRTC.setLogLevel(4);
 
